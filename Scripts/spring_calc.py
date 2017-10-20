@@ -17,18 +17,18 @@ R_p02 = 1300.
 ni = 0.3
 G = E / (2 + (1 + ni))
 
-D = 13.0  # promjer opruge [mm]
+D = 11.5  # promjer opruge [mm]
 d = 1.0 # promjer žice [mm]
 
-L_0 = 30.  # Visina opuštene opruge
-L_c = 25.  # visina napregnute opruge [mm]
+L_0 = 40.  # Visina opuštene opruge
+L_c = 19.  # visina napregnute opruge [mm]
 
 
 #razlika, s = abs(v_o - v_n)
 s = abs(L_0 - L_c)
 
 # korak
-k = 4.
+k = 5.
 
 # broj zavoja opruge
 n = L_0 / k
