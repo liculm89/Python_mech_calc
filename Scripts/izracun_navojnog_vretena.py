@@ -6,9 +6,7 @@ Created on Thu Jul 14 14:01:29 2016
 
 @author: mauro
 """
-
-import numpy as np
-
+import math
 # Dimenzije vretena
 # Tip B+B+K Double preloaded nut in cube case
 
@@ -27,7 +25,7 @@ d_r = 34.0  # Dijametar korijena navoja [mm]
 L_r = 825  # Radna dužina vretena [mm]
 L_uk = 1025  # Udaljenst između ležajeva vretena [mm]
 f_S = 3.
-import math
+
 
 F_v = 0.1 * C_a  # N
 f_v = 1.0  # Odabran prema

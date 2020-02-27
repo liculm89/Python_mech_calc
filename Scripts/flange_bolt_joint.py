@@ -17,7 +17,7 @@ Fs = 1.5  # Faktor sigurnosti
 # mi_0 = np.linspace(0.12, 0.4, 5)
 # Statički koeficijent trenja (lijevano željezo - bronza P.CuSn 4)
 mi_0 = 0.2
-pcd = 0.080  # mm PCD The pitch-circle diametar - diametar na kojem su ravnomjerno raspoređeni vijci
+pcd = 0.080  # mm PCD The pitch-circle diametar - dia ravnomjerno rasp. vijaka
 
 # Geometrija spoja
 r_out = 0.095  # mm Vanjski diametar dodirnih ploha
@@ -87,8 +87,8 @@ Maksimalni dozvoljeni moment prenošen isključivo trenjem
 T_tr = np.zeros(len(M_pred))  # Moment trenja
 
 for i, m_p in enumerate(M_pred):
-    T_tr[i] = (2. / 3) * F_vaks[i] * mi_0 * (((r_out / 2.)**3 - \
-               (r_in / 2.)**3) / ((r_out / 2.)**2 - (r_in / 2.)**2)) # Nm
+    T_tr[i] = (2. / 3) * F_vaks[i] * mi_0 * (((r_out / 2.)**3 - (
+     r_in / 2.)**3) / ((r_out / 2.)**2 - (r_in / 2.)**2))  # Nm
 
 Max_Tr_Load = np.zeros((len(n_vijaka), len(M_pred)))
 

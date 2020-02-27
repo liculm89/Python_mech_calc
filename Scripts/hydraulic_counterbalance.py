@@ -6,6 +6,7 @@ Created on Fri Nov 13 10:16:20 2015
 """
 import math as math
 import numpy as np
+import matplotlib.pyplot as plt
 
 fi_cilindricni = 24.  # mm
 fi_konus = 30.  # mm
@@ -17,10 +18,7 @@ A_cil = (fi_cilindricni**2 * math.pi) / 4.
 A_konus = ((fi_konus**2 * math.pi) / 4 - A_cil) * math.cos(math.radians(45))
 A = A_cil + A_konus
 
-
 F = (tlak * 10**5) * A * 10**(-6)
-
-import matplotlib.pyplot as plt
 
 plt.figure(1)
 plt.title("Karakteristika hidraulicne vage (tlak/sila)")
